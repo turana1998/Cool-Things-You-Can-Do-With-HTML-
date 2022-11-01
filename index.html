@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Things with HTML</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- .. -->
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.795);
+            font-family: 'Caveat', cursive;
+        }
+
+        .main * {
+            color: #fff;
+            text-align: center;
+            font-size: 40px;
+            display: block;
+            text-decoration: none;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+    </style>
+</head>
+
+<body oncontextmenu="return false">
+    <div class="main">
+        <h1>Cool Things You Can Do With HTML</h1>
+        <hr>
+        <a href="tel:123456789">"a href="tel:123456789" -Call with link</a>
+        <hr>
+        <a href="mailto:user@gmail.com">"a href="mailto:user@gmail.com" -Mail with link</a>
+        <hr>
+        <p contenteditable="true">This is an editable paragraph Click me !</p>
+        <hr>
+        <h1>Add Voice Recognition</h1>
+        <input type="text" x-webkit-speech="x-webkit-speech" />
+        <hr>
+        <h1>Take User's Camera . Works only Camera </h1>
+        <input type="file" capture="environment" accept="video/*" />
+        <input type="file" capture="environment" accept="image/*" />
+        <hr>
+        <h1>Disable Right Clicking</h1>
+        <section oncontextmenu="return false"> Not Allowed </section>
+        <hr>
+    </div>
+    <script>
+        window.addEventListener("contextmenu",
+            function (e) {
+                e.stopPropagation()
+            }, true);
+    </script>
+</body>
+
+</html>
